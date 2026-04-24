@@ -1,4 +1,4 @@
-# NBCraft (NBC)
+# VerCraft (a fork of nbcraft)
 
 ## Disclaimer
 **NBCraft is not affiliated or associated with Minecraft, Mojang AB, or Microsoft.**<br>
@@ -17,6 +17,8 @@ The decompilation was performed primarily using [IDA](https://hex-rays.com/ida-p
   * Legacy Console Edition UI theme, gamma, and mipmaps
   * Pocket Edition UI theme and sky colors
   * Java Edition UI theme
+  * remake multiplayer and add accounting system
+  * also add some *special* features
   * Normal lighting (something Pocket Edition lacked)
   * Alpha title logo
 * To (in the future) provide a cross-platform modding API in the form of [WebAssembly](https://webassembly.org/) modules, giving more creative control to the community.
