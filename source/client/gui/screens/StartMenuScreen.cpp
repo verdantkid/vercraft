@@ -17,10 +17,10 @@
 #include "client/resources/SplashManager.hpp"
 
 StartMenuScreen::StartMenuScreen() :
-	m_startButton  (0, 0, 160, 24, "Start Game"),
-	m_joinButton   (0, 0, 160, 24, "Join Game"),
+	m_startButton  (0, 0, 160, 24, "Singleplayer"),
+	m_joinButton   (0, 0, 160, 24, "Multiplayer"),
 	m_optionsButton(0, 0,  78, 22, "Options"),
-	m_buyButton    (0, 0,  78, 22, "Buy"),
+	m_buyButton    (0, 0,  78, 22, "Obtain"),
 	m_creditsButton(0, 0,  78, 22, "")
 {
 	m_chosenSplash = SplashManager::singleton().getSplash();
@@ -161,7 +161,7 @@ void StartMenuScreen::init()
 	m_versionTextX = (m_width - m_pFont->width(m_versionText)) / 2;
 
 #ifndef DEMO
-	m_buyButton.setMessage("Quit");
+	m_buyButton.setMessage("Quit Game");
 #endif
 
 	_updateLicense();
