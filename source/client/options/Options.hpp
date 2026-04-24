@@ -452,7 +452,7 @@ public:
 #define OPTIONS_LIST_CONTROLS_CONTROLS     \
 	HEADER("Controls");                    \
 	OPTION(m_sensitivity);                 \
-	OPTION(m_invertMouse);                 \
+	/*OPTION(m_invertMouse);*/             \
 	OPTION(m_splitControls); idxSplit = currentIndex; \
 	/*OPTION(m_swapJumpSneak);*/           \
 	/*OPTION(m_buttonSize);*/              \

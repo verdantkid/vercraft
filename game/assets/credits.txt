@@ -1,3 +1,4 @@
+NBCraft:
 BrentDaMage
 iProgramMC
 Swololo
@@ -7,4 +8,9 @@ Vimdo
 Wilylcaro
 Goodly
 all the other NBCraft contributors
+ 
+Vercraft:
+VerdantKid
+Norstorian
+ 
 and everyone at Mojang
