@@ -180,23 +180,22 @@ void StartMenuScreen::render(float f)
 	//renderBackground();
 	renderMenuBackground(f);
 #endif
-
 	//int titleYPos = 4;
-	int titleYPos = 30; // -- MC Java position.
+	//int titleYPos = 30; // -- MC Java position.
 	//int titleYPos = 15;
 	bool crampedMode = false;
 
-	if (m_width * 3 / 4 < 256)
-	{
-		crampedMode = true;
-		titleYPos = 4;
-	}
+	//if (m_width * 3 / 4 < 256)
+	//{
+		//crampedMode = true;
+		//titleYPos = 4;
+	//}
 
 	LogoRenderer::singleton().render(f);
 
 	if (m_uiTheme != UI_CONSOLE)
 	{
-		drawString(*m_pFont, m_versionText, m_versionTextX, 58 + titleYPos, Color(204, 204, 204));
+		drawString(*m_pFont, m_versionText, 1, m_height - 10, Color::WHITE);
 		drawString(*m_pFont, m_watermarkText, m_watermarkX, m_height - 10, Color::WHITE);
 	}
 
