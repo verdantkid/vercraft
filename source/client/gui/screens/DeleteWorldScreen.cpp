@@ -11,8 +11,8 @@
 
 DeleteWorldScreen::DeleteWorldScreen(const LevelSummary& level) :
 	ConfirmScreen(nullptr,
-		"Are you sure you want to delete this world?",
-		"'" + level.m_levelName + "' will be lost forever!",
+		"Are you sure you want to kill your dog in this world?",
+		"'" + level.m_levelName + "' It will be gone forever!", // Good joke verdant.
 		"Delete", "Cancel", 0),
 	m_level(level)
 {
