@@ -1,8 +1,8 @@
 #include "DeathScreen.hpp"
 
 DeathScreen::DeathScreen() :
-	m_btnRespawn("Respawn!"),
-	m_btnTitle  ("Main menu")
+	m_btnRespawn("respawn!"),
+	m_btnTitle  ("quit!")
 {
 	m_tickCounter = 0;
 }
