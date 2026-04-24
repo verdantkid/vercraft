@@ -20,7 +20,7 @@ StartMenuScreen::StartMenuScreen() :
 	m_startButton  (0, 0, 160, 24, "Singleplayer"),
 	m_joinButton   (0, 0, 160, 24, "Multiplayer"),
 	m_optionsButton(0, 0,  78, 22, "Options"),
-	m_buyButton    (0, 0,  78, 22, "Obtain"),
+	m_buyButton    (0, 0,  160, 22, "Obtain"),
 	m_creditsButton(0, 0,  78, 22, "")
 {
 	m_chosenSplash = SplashManager::singleton().getSplash();
@@ -97,17 +97,17 @@ void StartMenuScreen::init()
 {
 	int yPos = m_height / 2;
 
-	m_startButton.m_width = m_joinButton.m_width = 160;
-	m_optionsButton.m_width = m_buyButton.m_width = 78;
-	m_startButton.m_height = m_joinButton.m_height = m_optionsButton.m_height = m_buyButton.m_height = 25;
+	m_startButton.m_width = m_joinButton.m_width = 200;
+	m_optionsButton.m_width = m_buyButton.m_width = 200;
+	m_startButton.m_height = m_joinButton.m_height = m_optionsButton.m_height = m_buyButton.m_height = 20;
 
 	m_joinButton.m_yPos = yPos + 25;
 	m_startButton.m_yPos = yPos - 3;
 
-	yPos += 55;
+	yPos += 50;
 
 	m_optionsButton.m_yPos = yPos;
-	m_buyButton.m_yPos = yPos;
+	m_buyButton.m_yPos = yPos - -20;
 
 	m_startButton.m_xPos = (m_width - m_startButton.m_width) / 2;
 
