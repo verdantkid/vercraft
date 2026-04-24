@@ -13,7 +13,7 @@ ConfirmScreen::ConfirmScreen(Screen* pScreen, const std::string& line1, const st
 	field_40(x),
 	m_textLine1(line1),
 	m_textLine2(line2),
-	m_btnOK    (0, 0, "Ok (youre cool)"),
+	m_btnOK    (0, 0, "Ok (you're cool)"),
 	m_btnCancel(0, 0, "Cancel (very gay btw)")
 {
 }
