@@ -44,7 +44,7 @@ void DeathScreen::render(float f)
 	{
 		MatrixStack::Ref matrix = MatrixStack::World.push();
 		matrix->scale(2.0f);
-		drawCenteredString(*m_pFont, "You died!", m_width / 4, m_height / 8, 0xFFFFFF);
+		drawCenteredString(*m_pFont, "congratulations you died!", m_width / 4, m_height / 8, 0xFFFFFF);
 	}
 
 	// render the buttons after 1.5 seconds

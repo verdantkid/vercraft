@@ -13,7 +13,7 @@ static char g_CreateWorldFilterArray[] = { '/','\n','\r','\x09','\0','\xC','`','
 
 CreateWorldScreen::CreateWorldScreen(Screen* parent) :
 	m_pParent(parent),
-	m_textName(this, 0, 0, 0, 0, "", "Unnamed world"),
+	m_textName(this, 0, 0, 0, 0, "", "Gay World"),
 	m_textSeed(this, 0, 0, 0, 0, ""),
 	m_btnGameMode("Game Mode"),
 	m_btnBack("Cancel"),
