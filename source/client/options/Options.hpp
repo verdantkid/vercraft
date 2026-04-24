@@ -442,6 +442,7 @@ public:
 	OPTION(m_difficulty);                  \
 	OPTION(m_thirdPerson);                 \
 	OPTION(m_serverVisibleDefault);        \
+	/*OPTION(m_playerName);*/ 			   \
 
 #define OPTIONS_LIST_GAMEPLAY_AUDIO        \
 	HEADER("Audio");                       \
@@ -455,7 +456,7 @@ public:
 	OPTION(m_splitControls); idxSplit = currentIndex; \
 	/*OPTION(m_swapJumpSneak);*/           \
 	/*OPTION(m_buttonSize);*/              \
-	OPTION(m_autoJump);                    \
+	/*OPTION(m_autoJump);*/                \
 	OPTION(m_bUseController); idxController = currentIndex; \
 
 #define OPTIONS_LIST_CONTROLS_FEEDBACK     \
@@ -463,8 +464,8 @@ public:
 	/*OPTION(m_vibrate);*/                 \
 
 #define OPTIONS_LIST_CONTROLS_EXPERIMENTAL \
-	HEADER("Experimental");                \
-	OPTION(m_flightHax);                   \
+	/*HEADER("Experimental");*/            \
+	/*OPTION(m_flightHax);*/               \
 
 #define OPTIONS_LIST_VIDEO_GRAPHICS        \
 	HEADER("Graphics");                    \

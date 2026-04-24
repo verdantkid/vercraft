@@ -71,6 +71,7 @@
     "loading.initializing": "Initializing server",
     "loading.spawnArea": "Loading spawn area",
     "options.thirdPerson": "Third Person View",
+    "options.username": "Player Name",
     "options.fancyGraphics": "Fancy Graphics",
     "options.blockOutlines": "Block Outlines",
     "options.fancyGrass": "Fancy Grass",
