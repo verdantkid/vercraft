@@ -93,7 +93,7 @@ void JoinGameScreen::render(float f)
 	m_pAvailableGamesList->render(m_menuPointer, f);
 	Screen::render(f);
 
-	drawCenteredString(*m_pMinecraft->m_pFont, "Scanning for Games...", m_width / 2, 8, 0xFFFFFFFF);
+	drawCenteredString(*m_pMinecraft->m_pFont, "Scanning for LAN Games...", m_width / 2, 8, 0xFFFFFFFF);
 }
 
 void JoinGameScreen::tick()
