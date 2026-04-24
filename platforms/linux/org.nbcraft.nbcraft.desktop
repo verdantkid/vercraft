@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=NBCraft
-GenericName=NBCraft
+Name=Vercraft
+GenericName=Vercraft
 Comment=The ultimate cross-platform mining experience.
 Exec=rungame.sh
-Icon=org.nbcraft.nbcraft
+Icon=org.Vercraft.Vercraft
 Terminal=false
 Type=Application
 Categories=Game;Simulation;

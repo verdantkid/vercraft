@@ -9,7 +9,7 @@ cd "$scriptroot"
 # powerpc is handled further down
 targets='i386-apple-macos10.4 x86_64-apple-macos10.7 arm64-apple-macos11.0'
 # Must be kept in sync with the cmake executable name
-bin='nbcraft'
+bin='Vercraft'
 
 platformdir=$PWD
 
@@ -426,9 +426,9 @@ for target in $targets; do
     cd ..
 done
 
-rm -rf ../NBCraft.app
-mkdir -p ../NBCraft.app/Contents/MacOS/libexec ../NBCraft.app/Contents/Resources
-cp "$platformdir/Info.plist" ../NBCraft.app/Contents
+rm -rf ../Vercraft.app
+mkdir -p ../Vercraft.app/Contents/MacOS/libexec ../Vercraft.app/Contents/Resources
+cp "$platformdir/Info.plist" ../Vercraft.app/Contents
 
 NBC_TARGET='arm64-apple-macos11.0' \
     NBC_SDK="$arm64_sdk" \
@@ -441,27 +441,27 @@ NBC_TARGET='unknown-apple-macos10.4' \
     -arch x86_64 -arch i386 \
     "$platformdir/arch.c" -Os -o arch-x86
 
-lipo -create arch-* -output ../NBCraft.app/Contents/MacOS/libexec/arch
+lipo -create arch-* -output ../Vercraft.app/Contents/MacOS/libexec/arch
 [ -z "$DEBUG" ] && [ -z "$NOSTRIP" ] &&
-    cctools-strip -no_code_signature_warning ../NBCraft.app/Contents/MacOS/libexec/arch
+    cctools-strip -no_code_signature_warning ../Vercraft.app/Contents/MacOS/libexec/arch
 
-cp -a "$platformdir/../../game/assets" ../NBCraft.app/Contents/MacOS
-cp "$platformdir/launchscript.sh" "../NBCraft.app/Contents/MacOS/$bin"
-mv ../NBCraft.app/Contents/MacOS/assets/app/icons/icon.icns ../NBCraft.app/Contents/Resources
-rm -rf ../NBCraft.app/Contents/MacOS/assets/app
+cp -a "$platformdir/../../game/assets" ../Vercraft.app/Contents/MacOS
+cp "$platformdir/launchscript.sh" "../Vercraft.app/Contents/MacOS/$bin"
+mv ../Vercraft.app/Contents/MacOS/assets/app/icons/icon.icns ../Vercraft.app/Contents/Resources
+rm -rf ../Vercraft.app/Contents/MacOS/assets/app
 
 for target in $targets; do
     arch="${target%%-*}"
-    cp "build-$target/$bin" "../NBCraft.app/Contents/MacOS/libexec/$bin-$arch"
+    cp "build-$target/$bin" "../Vercraft.app/Contents/MacOS/libexec/$bin-$arch"
     case $arch in
         (powerpc*|ppc*) strip='ppc-strip' ;;
         (*) strip='cctools-strip -no_code_signature_warning' ;;
     esac
     [ -z "$DEBUG" ] && [ -z "$NOSTRIP" ] &&
-        $strip "../NBCraft.app/Contents/MacOS/libexec/$bin-${target%%-*}"
+        $strip "../Vercraft.app/Contents/MacOS/libexec/$bin-${target%%-*}"
 done
 if command -v ldid >/dev/null; then
-    ldid -S ../NBCraft.app/Contents/MacOS/libexec/arch "../NBCraft.app/Contents/MacOS/libexec/$bin-arm64"*
+    ldid -S ../Vercraft.app/Contents/MacOS/libexec/arch "../Vercraft.app/Contents/MacOS/libexec/$bin-arm64"*
 else
-    codesign -f -s - ../NBCraft.app/Contents/MacOS/libexec/arch "../NBCraft.app/Contents/MacOS/libexec/$bin-arm64"*
+    codesign -f -s - ../Vercraft.app/Contents/MacOS/libexec/arch "../Vercraft.app/Contents/MacOS/libexec/$bin-arm64"*
 fi

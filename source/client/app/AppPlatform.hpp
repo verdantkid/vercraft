@@ -36,8 +36,8 @@
 #endif
 
 #define C_GAME_NAME "Vercraft"
-#define C_HOME_PATH "/games/org.nbcraft/"
-#define C_STORAGE_DIR "nbcraft"
+#define C_HOME_PATH "/games/org.Vercraft/"
+#define C_STORAGE_DIR "Vercraft"
 #define C_MAX_LOCAL_PLAYERS 4
 
 typedef unsigned int LocalPlayerID;

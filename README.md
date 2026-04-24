@@ -1,7 +1,7 @@
-# VerCraft (a fork of nbcraft)
+# VerCraft (a fork of Nbcraft)
 
 ## Disclaimer
-**NBCraft is not affiliated or associated with Minecraft, Mojang AB, or Microsoft.**<br>
+**Nbcraft (VerCraft) is not affiliated or associated with Minecraft, Mojang AB, or Microsoft.**<br>
 To be absolutely clear:<br>
 **THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT AND IS NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
 
@@ -44,12 +44,12 @@ The decompilation was performed primarily using [IDA](https://hex-rays.com/ida-p
 * Add support for Minecraft Java or Minecraft Bedrock servers. (although LAN play with original MCPE clients
   will be supported for as long as possible)
 
-Note: While the original Minecraft PE v0.1.3 may not work on newer devices, NBCraft works on any of the platforms listed above.
+Note: While the original Minecraft PE v0.1.3 may not work on newer devices, Nbcraft (Vercraft) works on any of the platforms listed above.
 
 ### This is a modified version of [the original Minecraft PE v0.1.3 decompilation](https://github.com/nbcraft-org/mcped).
 
 ## Where'd the name come from?
-We came up with "NBCraft" by combining the last names of the three original developers of Minecraft: Pocket Edition;<br>
+We came up with "nbcraft" by combining the last names of the three original developers of Minecraft: Pocket Edition;<br>
 Aron Nieminen, Johan Bernhardsson, and Tommaso Checchi. While they were not the only developers working on Pocket Edition at the time, they played a pivotal role in the game's development.<br>
 Ultimately, these three guys made Minecraft what it is today.
 
@@ -65,8 +65,8 @@ software with different but compatible licenses:
 
 ## WANT TO HELP?
 
-Want to help this project? Here's [a list of things to do.](https://github.com/nbcraft-org/nbcraft/issues)
-Once your code is tested and ready, [submit a pull request](https://github.com/nbcraft-org/nbcraft/pulls).
+Want to help this project? Here's [a list of things to do.](https://github.com/verdantkid/vercraft/issues)
+Once your code is tested and ready, [submit a pull request](https://github.com/verdantkid/vercraft/pulls).
 
 ## USING BETA ASSETS
 
@@ -121,7 +121,7 @@ There are 2 ways to build on Windows, the universal build script or Visual Studi
 
 #### MinGW cross build script
 
-There is a script to easily build a version of NBCraft that works on all versions of Windows since 95.
+There is a script to easily build a version of Vercraft that works on all versions of Windows since 95.
 
 You will need to install the following dependencies
 
@@ -166,7 +166,7 @@ export MPC='/opt/local'
 ./platforms/windows/build.sh
 ```
 
-An executable and assets folder will be placed at platforms/windows/build/NBCraft
+An executable and assets folder will be placed at platforms/windows/build/Vercraft
 
 #### Visual Studio
 
@@ -220,7 +220,7 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 # Run
-./nbcraft
+./Vercraft
 ```
 
 #### Makefile
@@ -232,7 +232,7 @@ You should ***ALWAYS*** try to use CMake if you can, the Makefile is very limite
 make
 # Run
 cd build
-./nbcraft
+./Vercraft
 ```
 
 ### macOS
@@ -241,7 +241,7 @@ There are 3 ways to build on macOS, Xcode, CMake, or the universal build script.
 
 #### Xcode
 
-Open the Xcode project at projects/xcode/NBCraft.xcodeproj and build either the NBCraftClient.SDL1 or NBCraftClient.SDL2 targets. You must have SDL 1.2 or SDL 2 installed from homebrew or macports.
+Open the Xcode project at projects/xcode/Vercraft.xcodeproj and build either the VercraftClient.SDL1 or VercraftClient.SDL2 targets. You must have SDL 1.2 or SDL 2 installed from homebrew or macports.
 
 #### CMake
 
@@ -249,7 +249,7 @@ You can build with CMake as detailed in the Unix-like systems section above.  Yo
 
 #### Universal build script
 
-There is a script to easily build a version of NBCraft that works on all versions of macOS since 10.4 tiger, and on PowerPC.
+There is a script to easily build a version of Vercraft that works on all versions of macOS since 10.4 tiger, and on PowerPC.
 
 You will need to install the following dependencies, in addition to the Xcode command line tools:
 
@@ -272,8 +272,8 @@ export MPC='/opt/local'
 ./platforms/macos/build.sh
 
 # run
-cd platforms/macos/build/NBCraft
-./nbcraft
+cd platforms/macos/build/Vercraft
+./Vercraft
 ```
 
 ### iOS
@@ -297,7 +297,7 @@ cd platforms/macos/build/NBCraft
 ./platforms/ios/build.sh
 ```
 
-Then install the IPA at `platforms/ios/build/NBCraft.ipa`
+Then install the IPA at `platforms/ios/build/Vercraft.ipa`
 
 ## Have seams when playing?
 

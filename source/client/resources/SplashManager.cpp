@@ -29,14 +29,14 @@ void SplashManager::init(const std::string& user)
 
 #if MCE_GFX_API_OGL
 #ifdef USE_GLES
-    m_splashes.push_back("OpenGL ES 1.1!");
+    m_splashes.push_back("awwwwww, bad pc?");
 #else
-    m_splashes.push_back("OpenGL 1.5!");
+    m_splashes.push_back("VerdantKid was here");
 #endif
 #elif MCE_GFX_API_D3D11
-    m_splashes.push_back("Direct3D 11.1!");
+    m_splashes.push_back("who the fuck is using windows to play this :sob:");
 #elif MCE_GFX_API_D3D9
-    m_splashes.push_back("Direct3D 9!");
+    m_splashes.push_back("I am gayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.");
 #endif
 
     m_isYouSplash = Util::format("%s IS YOU", user.c_str());

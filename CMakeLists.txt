@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16.0)
-project(nbcraft)
+project(Vercraft)
 
 # Store Output In Top-Level Build Directory
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
@@ -130,7 +130,7 @@ add_subdirectory(platforms)
 
 # Assets
 if(EMSCRIPTEN)
-    target_link_options(nbcraft PRIVATE --use-preload-plugins --preload-file "${CMAKE_CURRENT_SOURCE_DIR}/game@/")
+    target_link_options(Vercraft PRIVATE --use-preload-plugins --preload-file "${CMAKE_CURRENT_SOURCE_DIR}/game@/")
 elseif(XENON)
     # idk, we'll figure it out later
     # Example: adding a binary file (like a texture or sound)

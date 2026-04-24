@@ -9,10 +9,10 @@ cd "$scriptroot"
 # We could build for armv6, but we don't due to unplayable performance.
 targets='armv7-apple-ios3.1 arm64-apple-ios7.0'
 # Must be kept in sync with the cmake executable name
-bin='nbcraft'
+bin='Vercraft'
 
 platformdir=$PWD
-entitlements="$platformdir/nbcraft.entitlements"
+entitlements="$platformdir/Vercraft.entitlements"
 
 workdir="$PWD/build/work"
 sdk="$workdir/sdks/ios-sdk"

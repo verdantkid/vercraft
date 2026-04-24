@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16.0)
-project(nbcraft-audio-dummy)
+project(Vercraft-audio-dummy)
 
 # Build
-add_library(nbcraft-audio STATIC
+add_library(Vercraft-audio STATIC
 	SoundSystemNull.cpp
 )
 
-target_link_libraries(nbcraft-audio PUBLIC nbcraft-core)
+target_link_libraries(Vercraft-audio PUBLIC Vercraft-core)
 
 # Headers
-target_include_directories(nbcraft-audio PUBLIC .)
+target_include_directories(Vercraft-audio PUBLIC .)

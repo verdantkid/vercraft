@@ -2,17 +2,17 @@
 # shellcheck disable=2016
 set -e
 
-ipaname='NBCraft.ipa'
+ipaname='Vercraft.ipa'
 # must be kept in sync with the cmake executable name
-bin="${1:-build/renbcraft}"
+bin="${1:-build/reVercraft}"
 # must be kept in sync with the info.plist
-execname='nbcraft'
+execname='Vercraft'
 
 platformdir='platforms/ios'
 builddir="$platformdir/build"
 assetdir='game/assets'
 ipadir="$builddir/ipa"
-apppath="$ipadir/Payload/nbcraft.app"
+apppath="$ipadir/Payload/Vercraft.app"
 
 [ "${0%/*}" = "$0" ] && scriptroot="." || scriptroot="${0%/*}"
 cd "$scriptroot/../.."
@@ -31,7 +31,7 @@ fi
 rm -rf "$ipadir"
 mkdir -p "$apppath"
 cp "$bin" "$apppath/$execname"
-sed -E -e "s|\\\$\{EXECUTABLE_NAME\}|$execname|" -e "s|\\\$\{PRODUCT_NAME(:rfc1034identifier)?\}|$execname|g" "$platformdir/NBCraft-Info.plist" |
+sed -E -e "s|\\\$\{EXECUTABLE_NAME\}|$execname|" -e "s|\\\$\{PRODUCT_NAME(:rfc1034identifier)?\}|$execname|g" "$platformdir/Vercraft-Info.plist" |
     plistutil -o "$apppath/Info.plist" -f bin
 cp -a \
     "$platformdir/precompiled"/* \

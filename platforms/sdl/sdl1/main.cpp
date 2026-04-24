@@ -59,8 +59,8 @@ static void initPlatform()
 
     // disable buffering for stdout, so we don't lose our logs when abort is called
     setbuf(stdout, NULL);
-    freopen("nbcraft.stdout.log", "w", stdout);
-    freopen("nbcraft.stderr.log", "w", stderr);
+    freopen("Vercraft.stdout.log", "w", stdout);
+    freopen("Vercraft.stderr.log", "w", stderr);
 #endif
 }
 

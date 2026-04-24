@@ -1,4 +1,4 @@
-package org.nbcraft.nbcraft;
+package org.Vercraft.Vercraft;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

@@ -76,7 +76,7 @@ endif
 
 OBJS := $(addprefix build/,$(C_SRCS:.c=.c.o)) $(addprefix build/,$(CXX_SRCS:.cpp=.cpp.o))
 
-all: build/nbcraft build/assets
+all: build/Vercraft build/assets
 
 build:
 	mkdir build
@@ -85,9 +85,9 @@ build/assets: build
 	cp -r game/assets build
 	rm -rf build/assets/app
 
-build/nbcraft: $(OBJS) build
-	$(AR) rcs build/nbcraft.a $(OBJS)
-	$(CXX) $(LDFLAGS) build/nbcraft.a $(LIBS) -o build/nbcraft
+build/Vercraft: $(OBJS) build
+	$(AR) rcs build/Vercraft.a $(OBJS)
+	$(CXX) $(LDFLAGS) build/Vercraft.a $(LIBS) -o build/Vercraft
 
 build/%.cpp.o: %.cpp
 	@mkdir -p $(dir $@)

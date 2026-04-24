@@ -8,7 +8,7 @@ cd "$scriptroot"
 arch="${ARCH:-x86_64}"
 target="$arch-w64-mingw32"
 # Must be kept in sync with the cmake executable name
-bin='nbcraft.exe'
+bin='Vercraft.exe'
 
 platformdir=$PWD
 
@@ -190,11 +190,11 @@ make -j"$ncpus"
 
 cd ..
 
-rm -rf ../NBCraft
-mkdir -p ../NBCraft
+rm -rf ../Vercraft
+mkdir -p ../Vercraft
 
-cp -a "$platformdir/../../game/assets" ../NBCraft
-cp "build-$arch/$bin" ../NBCraft
+cp -a "$platformdir/../../game/assets" ../Vercraft
+cp "build-$arch/$bin" ../Vercraft
 [ -z "$DEBUG" ] && [ -z "$NOSTRIP" ] &&
-    "$target-strip" "../NBCraft/$bin"
+    "$target-strip" "../Vercraft/$bin"
 true

@@ -1,4 +1,4 @@
-package org.nbcraft.nbcraft;
+package org.Vercraft.Vercraft;
 
 import android.os.Build;
 import android.os.Bundle;

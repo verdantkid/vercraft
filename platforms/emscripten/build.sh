@@ -37,6 +37,6 @@ emcmake cmake -GNinja "$@" ../../
 cmake --build .
 
 # Bundle
-cp nbcraft.* ../dist
-cp ../../platforms/sdl/sdl2/emscripten/wasm_shell.html ../dist/nbcraft.html
+cp Vercraft.* ../dist
+cp ../../platforms/sdl/sdl2/emscripten/wasm_shell.html ../dist/Vercraft.html
 cp ../../thirdparty/coi-serviceworker/coi-serviceworker.min.js ../dist

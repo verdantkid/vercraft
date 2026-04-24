@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////
 //
-// NBCraft.spa.h
+// Vercraft.spa.h
 //
 // Auto-generated on Saturday, 28 February 2026 at 23:35:39
 // Xbox LIVE Game Config project version 1.0.14.0
@@ -8,8 +8,8 @@
 //
 ////////////////////////////////////////////////////////////////////
 
-#ifndef __NBCRAFT_SPA_H__
-#define __NBCRAFT_SPA_H__
+#ifndef __Vercraft_SPA_H__
+#define __Vercraft_SPA_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -19,7 +19,7 @@ extern "C" {
 // Title info
 //
 
-#define TITLEID_NBCRAFT                             0x584111F8
+#define TITLEID_Vercraft                             0x584111F8
 
 //
 // Context ids
@@ -116,6 +116,6 @@ extern "C" {
 }
 #endif
 
-#endif // __NBCRAFT_SPA_H__
+#endif // __Vercraft_SPA_H__
 
 

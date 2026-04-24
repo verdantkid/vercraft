@@ -1,4 +1,4 @@
-#-- The 'game' directory is the default working directory for NBCraft if running from VS directly.
+#-- The 'game' directory is the default working directory for Vercraft if running from VS directly.
 
 # Ignore original assets
 /gui/buynow.png

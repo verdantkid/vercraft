@@ -1,4 +1,4 @@
-NBCraft:
+Vercraft:
 BrentDaMage
 iProgramMC
 Swololo
@@ -7,7 +7,7 @@ Un1q32
 Vimdo
 Wilylcaro
 Goodly
-all the other NBCraft contributors
+all the other Vercraft contributors
  
 Vercraft:
 VerdantKid

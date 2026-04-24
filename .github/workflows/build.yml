@@ -108,7 +108,7 @@ jobs:
           - name: Build macOS Archive
             run: |
                 cd projects/xcode
-                xcodebuild -scheme "NBCraftClient.${{ matrix.backend_name }}" \
+                xcodebuild -scheme "VercraftClient.${{ matrix.backend_name }}" \
                 -archivePath $RUNNER_TEMP/GitHubActions_MacOS_${{ matrix.backend_name }}.xcarchive \
                 -sdk macosx \
                 -configuration "Release [${{ matrix.backend_name }}] (Default)" \
@@ -312,5 +312,5 @@ jobs:
                 submodules: true
           - uses: ilammy/msvc-dev-cmd@v1
           - name: Build
-            run: msbuild NBCraftClient.Win32\NBCraftClient.Win32.vcxproj /p:PlatformToolset=v143 /p:Configuration=Debug
+            run: msbuild VercraftClient.Win32\VercraftClient.Win32.vcxproj /p:PlatformToolset=v143 /p:Configuration=Debug
             working-directory: projects/visual-studio

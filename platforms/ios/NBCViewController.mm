@@ -1,9 +1,9 @@
 //
 //  NBCViewController.m
-//  NBCraft
+//  Vercraft
 //
 //  Created by Brent on 10/12/23.
-//  Copyright (c) 2023 NBCraft. All rights reserved.
+//  Copyright (c) 2023 Vercraft. All rights reserved.
 //
 
 #import "NBCViewController.h"

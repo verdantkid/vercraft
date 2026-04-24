@@ -1,11 +1,11 @@
-project(nbcraft-platforms)
+project(Vercraft-platforms)
 
 # Select & Build
 set(DEFAULT_PLATFORM "sdl2")
 if(NBC_WIN32)
     set(DEFAULT_PLATFORM "windows")
 endif()
-set(NBC_PLATFORM "${DEFAULT_PLATFORM}" CACHE STRING "NBCraft Platform (Check <root>/platforms)")
+set(NBC_PLATFORM "${DEFAULT_PLATFORM}" CACHE STRING "Vercraft Platform (Check <root>/platforms)")
 message(STATUS "Selected Platform: ${NBC_PLATFORM}")
 
 # Add platform-specific subdirectory

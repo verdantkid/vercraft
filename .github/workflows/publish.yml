@@ -51,17 +51,17 @@ jobs:
                     -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON \
                     ${{ matrix.flags }}
                 cmake --build .
-                strip nbcraft
+                strip Vercraft
           - name: Pack release
             run: |
-                mkdir NBCraft
-                mv game/assets build/nbcraft NBCraft
-                tar -czf NBCraft-Linux-${{ matrix.arch }}.tar.gz NBCraft
+                mkdir Vercraft
+                mv game/assets build/Vercraft Vercraft
+                tar -czf Vercraft-Linux-${{ matrix.arch }}.tar.gz Vercraft
           - uses: alexellis/upload-assets@0.4.1
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft-Linux-${{ matrix.arch }}.tar.gz"]'
+              asset_paths: '["Vercraft-Linux-${{ matrix.arch }}.tar.gz"]'
 
     flatpak:
         strategy:
@@ -100,7 +100,7 @@ jobs:
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["platforms/linux/build-flatpak/NBCraft-Linux-${{ matrix.arch }}.flatpak"]'
+              asset_paths: '["platforms/linux/build-flatpak/Vercraft-Linux-${{ matrix.arch }}.flatpak"]'
 
     macos:
         strategy:
@@ -127,13 +127,13 @@ jobs:
                   ./platforms/macos/build.sh
           - name: Pack release
             run: |
-                mv platforms/macos/build/NBCraft.app .
-                zip -r NBCraft-macOS.zip NBCraft.app
+                mv platforms/macos/build/Vercraft.app .
+                zip -r Vercraft-macOS.zip Vercraft.app
           - uses: alexellis/upload-assets@0.4.1
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft-macOS.zip"]'
+              asset_paths: '["Vercraft-macOS.zip"]'
 
     ios:
         name: iOS
@@ -158,7 +158,7 @@ jobs:
           - name: Build
             run: |
               ./platforms/ios/build.sh
-              mv platforms/ios/build/NBCraft.ipa NBCraft-iOS.ipa
+              mv platforms/ios/build/Vercraft.ipa Vercraft-iOS.ipa
             env:
               CLANG: clang-22
               AR: llvm-ar-22
@@ -168,7 +168,7 @@ jobs:
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft-iOS.ipa"]'
+              asset_paths: '["Vercraft-iOS.ipa"]'
 
     android:
         strategy:
@@ -206,12 +206,12 @@ jobs:
             env:
               BUILD_TOOLS_VERSION: 36.1.0
           - name: Rename APK
-            run: mv ${{ steps.sign_apk.outputs.signedReleaseFile }} NBCraft-Android.apk
+            run: mv ${{ steps.sign_apk.outputs.signedReleaseFile }} Vercraft-Android.apk
           - uses: alexellis/upload-assets@0.4.1
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft.apk"]'
+              asset_paths: '["Vercraft.apk"]'
 
     windows:
         strategy:
@@ -249,13 +249,13 @@ jobs:
               NOSTRIP: 1
           - name: Pack release
             run: |
-                mv platforms/windows/build/NBCraft .
-                zip -r NBCraft-Windows-${{ matrix.arch }}.zip NBCraft
+                mv platforms/windows/build/Vercraft .
+                zip -r Vercraft-Windows-${{ matrix.arch }}.zip Vercraft
           - uses: alexellis/upload-assets@0.4.1
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft-Windows-${{ matrix.arch }}.zip"]'
+              asset_paths: '["Vercraft-Windows-${{ matrix.arch }}.zip"]'
 
     switch:
         name: Nintendo Switch
@@ -275,14 +275,14 @@ jobs:
                     -DCMAKE_BUILD_TYPE=Release \
                     -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON
                 /opt/devkitpro/portlibs/switch/bin/aarch64-none-elf-cmake --build .
-                mv platforms/sdl/sdl2/nbcraft.nro .
+                mv platforms/sdl/sdl2/Vercraft.nro .
           - name: Pack release
             run: |
-                mkdir NBCraft
-                mv game/assets build/nbcraft.nro NBCraft
-                zip -r NBCraft-Switch.zip NBCraft
+                mkdir Vercraft
+                mv game/assets build/Vercraft.nro Vercraft
+                zip -r Vercraft-Switch.zip Vercraft
           - uses: alexellis/upload-assets@0.4.1
             env:
               GITHUB_TOKEN: ${{ github.token }}
             with:
-              asset_paths: '["NBCraft-Switch.zip"]'
+              asset_paths: '["Vercraft-Switch.zip"]'

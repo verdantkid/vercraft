@@ -2297,7 +2297,7 @@
 		8443373C2F4060AD00EB3115 /* TickBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TickBox.cpp; sourceTree = "<group>"; };
 		8443373D2F4060AD00EB3115 /* TickBox.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TickBox.hpp; sourceTree = "<group>"; };
 		8443B6E92A98675F0086730C /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = /opt/local/lib/libSDL2.a; sourceTree = "<absolute>"; };
-		844496762E76685C008CF2E0 /* NBCraftClient.SDL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NBCraftClient.SDL1; sourceTree = BUILT_PRODUCTS_DIR; };
+		844496762E76685C008CF2E0 /* VercraftClient.SDL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VercraftClient.SDL1; sourceTree = BUILT_PRODUCTS_DIR; };
 		8444968C2E7668E5008CF2E0 /* libSDL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL.a; path = ../../../../../opt/local/libexec/libsdl12/lib/libSDL.a; sourceTree = "<group>"; };
 		844496912E766960008CF2E0 /* AppPlatform_sdl1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppPlatform_sdl1.cpp; sourceTree = "<group>"; };
 		844496922E766960008CF2E0 /* AppPlatform_sdl1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppPlatform_sdl1.hpp; sourceTree = "<group>"; };
@@ -2357,7 +2357,7 @@
 		8484ABDC2B32935700076873 /* PlatformDefinitions_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefinitions_iOS.h; sourceTree = "<group>"; };
 		8488C0882B1EDD4F001AEC4F /* ShowKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowKeyboardView.h; sourceTree = "<group>"; };
 		8488C0892B1EDD4F001AEC4F /* ShowKeyboardView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShowKeyboardView.mm; sourceTree = "<group>"; };
-		8489B0972A86D4B2004CA8EC /* NBCraftClient.SDL2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NBCraftClient.SDL2; sourceTree = BUILT_PRODUCTS_DIR; };
+		8489B0972A86D4B2004CA8EC /* VercraftClient.SDL2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VercraftClient.SDL2; sourceTree = BUILT_PRODUCTS_DIR; };
 		8489B3212A86E464004CA8EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8489B3252A86E4B0004CA8EC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		848AA3132F34E897007E9A3E /* DyePowderItem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DyePowderItem.hpp; sourceTree = "<group>"; };
@@ -2367,7 +2367,7 @@
 		848CCB452F3A38E800031D1F /* MobSpawner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MobSpawner.cpp; sourceTree = "<group>"; };
 		848CCB482F3A974000031D1F /* FoodItem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FoodItem.hpp; sourceTree = "<group>"; };
 		848CCB492F3A974000031D1F /* FoodItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FoodItem.cpp; sourceTree = "<group>"; };
-		8492591D2AD8FCFC0081F5B9 /* NBCraftClient.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBCraftClient.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8492591D2AD8FCFC0081F5B9 /* VercraftClient.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VercraftClient.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849259492AD8FD4F0081F5B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = NBCViewController.xib; sourceTree = "<group>"; };
 		8492594D2AD8FD4F0081F5B9 /* NBCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBCAppDelegate.h; sourceTree = "<group>"; };
 		8492594E2AD8FD4F0081F5B9 /* NBCAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NBCAppDelegate.mm; sourceTree = "<group>"; };
@@ -2375,7 +2375,7 @@
 		849259502AD8FD4F0081F5B9 /* NBCViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NBCViewController.mm; sourceTree = "<group>"; };
 		8492595F2AD8FDCB0081F5B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849259612AD8FDD10081F5B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		849259632AD8FDD90081F5B9 /* NBCraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NBCraft-Info.plist"; sourceTree = "<group>"; };
+		849259632AD8FDD90081F5B9 /* Vercraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Vercraft-Info.plist"; sourceTree = "<group>"; };
 		849259722AD912890081F5B9 /* AppContext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppContext.hpp; sourceTree = "<group>"; };
 		849371352EE51E6700081C5A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../game/assets/app/launch/Default-568h@2x.png"; sourceTree = "<group>"; };
 		849371362EE51E6700081C5A /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../../game/assets/app/launch/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
@@ -3020,7 +3020,7 @@
 		84EB0D0F2EE2D4B3008FB007 /* WeatherConstants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WeatherConstants.hpp; sourceTree = "<group>"; };
 		84EB0D102EE2D4B3008FB007 /* WorldConstants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldConstants.cpp; sourceTree = "<group>"; };
 		84EB0D112EE2D4B3008FB007 /* WorldConstants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WorldConstants.hpp; sourceTree = "<group>"; };
-		84ED99D42AFF12D1003B6AF0 /* nbcraft.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nbcraft.entitlements; sourceTree = "<group>"; };
+		84ED99D42AFF12D1003B6AF0 /* Vercraft.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Vercraft.entitlements; sourceTree = "<group>"; };
 		84EDD07A2E76E2B600375AEF /* LegacyCPP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LegacyCPP.hpp; sourceTree = "<group>"; };
 		84EDD07B2E76E2B600375AEF /* LegacyCPP_Compat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LegacyCPP_Compat.hpp; sourceTree = "<group>"; };
 		84EDD07C2E76E2B600375AEF /* LegacyCPP_Info.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LegacyCPP_Info.hpp; sourceTree = "<group>"; };
@@ -4662,7 +4662,7 @@
 				84CEF0012AE3C97D006C5829 /* EAGLView.h */,
 				84CEF0022AE3C97D006C5829 /* EAGLView.m */,
 				84E001BA2AF3AF9B009B9555 /* MainWindow.xib */,
-				84ED99D42AFF12D1003B6AF0 /* nbcraft.entitlements */,
+				84ED99D42AFF12D1003B6AF0 /* Vercraft.entitlements */,
 				8492594D2AD8FD4F0081F5B9 /* NBCAppDelegate.h */,
 				8492594E2AD8FD4F0081F5B9 /* NBCAppDelegate.mm */,
 				8492594F2AD8FD4F0081F5B9 /* NBCViewController.h */,
@@ -4709,9 +4709,9 @@
 		8489B0982A86D4B2004CA8EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8489B0972A86D4B2004CA8EC /* NBCraftClient.SDL2 */,
+				8489B0972A86D4B2004CA8EC /* VercraftClient.SDL2 */,
 				84FFBD7E2ACA2876005A8CCF /* libRakNet.a */,
-				8492591D2AD8FCFC0081F5B9 /* NBCraftClient.iOS.app */,
+				8492591D2AD8FCFC0081F5B9 /* VercraftClient.iOS.app */,
 				84E4BFAE2AE9854B0023E16A /* libCommon.a */,
 				842610682AE988D30065905F /* libNetwork.a */,
 				8406FD292AF1814500B09C1D /* libRenderer.a */,
@@ -4719,7 +4719,7 @@
 				84B8AEE72AF188D8008DE93D /* libClient.a */,
 				84498A832AF18C7A005EF5A5 /* libZLib.a */,
 				84CCBC452E61849800E251AF /* libNBT.a */,
-				844496762E76685C008CF2E0 /* NBCraftClient.SDL1 */,
+				844496762E76685C008CF2E0 /* VercraftClient.SDL1 */,
 				84F779FD2EA1BF8E0045C907 /* libServer.a */,
 			);
 			name = Products;
@@ -4752,7 +4752,7 @@
 				8493713D2EE51F2A00081C5A /* icon.png */,
 				8492595E2AD8FDCB0081F5B9 /* InfoPlist.strings */,
 				849259612AD8FDD10081F5B9 /* main.m */,
-				849259632AD8FDD90081F5B9 /* NBCraft-Info.plist */,
+				849259632AD8FDD90081F5B9 /* Vercraft-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -6330,9 +6330,9 @@
 			productReference = 842610682AE988D30065905F /* libNetwork.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		844496752E76685C008CF2E0 /* NBCraftClient.SDL1 */ = {
+		844496752E76685C008CF2E0 /* VercraftClient.SDL1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 844496832E76685C008CF2E0 /* Build configuration list for PBXNativeTarget "NBCraftClient.SDL1" */;
+			buildConfigurationList = 844496832E76685C008CF2E0 /* Build configuration list for PBXNativeTarget "VercraftClient.SDL1" */;
 			buildPhases = (
 				844496722E76685C008CF2E0 /* Sources */,
 				844496732E76685C008CF2E0 /* Frameworks */,
@@ -6344,9 +6344,9 @@
 				844496852E7668A1008CF2E0 /* PBXTargetDependency */,
 				844496872E7668A1008CF2E0 /* PBXTargetDependency */,
 			);
-			name = NBCraftClient.SDL1;
+			name = VercraftClient.SDL1;
 			productName = MinecraftClient.SDL1;
-			productReference = 844496762E76685C008CF2E0 /* NBCraftClient.SDL1 */;
+			productReference = 844496762E76685C008CF2E0 /* VercraftClient.SDL1 */;
 			productType = "com.apple.product-type.tool";
 		};
 		84498A762AF18C7A005EF5A5 /* ZLib */ = {
@@ -6366,9 +6366,9 @@
 			productReference = 84498A832AF18C7A005EF5A5 /* libZLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8489B0962A86D4B2004CA8EC /* NBCraftClient.SDL2 */ = {
+		8489B0962A86D4B2004CA8EC /* VercraftClient.SDL2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8489B09E2A86D4B2004CA8EC /* Build configuration list for PBXNativeTarget "NBCraftClient.SDL2" */;
+			buildConfigurationList = 8489B09E2A86D4B2004CA8EC /* Build configuration list for PBXNativeTarget "VercraftClient.SDL2" */;
 			buildPhases = (
 				8489B0932A86D4B2004CA8EC /* Sources */,
 				8489B0942A86D4B2004CA8EC /* Frameworks */,
@@ -6380,14 +6380,14 @@
 				84B8AF8A2AF18A84008DE93D /* PBXTargetDependency */,
 				84498A9F2AF18D01005EF5A5 /* PBXTargetDependency */,
 			);
-			name = NBCraftClient.SDL2;
+			name = VercraftClient.SDL2;
 			productName = Minecraft;
-			productReference = 8489B0972A86D4B2004CA8EC /* NBCraftClient.SDL2 */;
+			productReference = 8489B0972A86D4B2004CA8EC /* VercraftClient.SDL2 */;
 			productType = "com.apple.product-type.tool";
 		};
-		8492591C2AD8FCFC0081F5B9 /* NBCraftClient.iOS */ = {
+		8492591C2AD8FCFC0081F5B9 /* VercraftClient.iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8492593D2AD8FCFD0081F5B9 /* Build configuration list for PBXNativeTarget "NBCraftClient.iOS" */;
+			buildConfigurationList = 8492593D2AD8FCFD0081F5B9 /* Build configuration list for PBXNativeTarget "VercraftClient.iOS" */;
 			buildPhases = (
 				849259192AD8FCFC0081F5B9 /* Sources */,
 				8492591A2AD8FCFC0081F5B9 /* Frameworks */,
@@ -6400,9 +6400,9 @@
 				84619B1B2AF1EC3500B0DE81 /* PBXTargetDependency */,
 				84619B1D2AF1EC3500B0DE81 /* PBXTargetDependency */,
 			);
-			name = NBCraftClient.iOS;
-			productName = nbcraft;
-			productReference = 8492591D2AD8FCFC0081F5B9 /* NBCraftClient.iOS.app */;
+			name = VercraftClient.iOS;
+			productName = Vercraft;
+			productReference = 8492591D2AD8FCFC0081F5B9 /* VercraftClient.iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		84B8AE132AF188D8008DE93D /* Client */ = {
@@ -6534,7 +6534,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8489B0922A86D4B2004CA8EC /* Build configuration list for PBXProject "NBCraft" */;
+			buildConfigurationList = 8489B0922A86D4B2004CA8EC /* Build configuration list for PBXProject "Vercraft" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -6547,9 +6547,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8489B0962A86D4B2004CA8EC /* NBCraftClient.SDL2 */,
-				844496752E76685C008CF2E0 /* NBCraftClient.SDL1 */,
-				8492591C2AD8FCFC0081F5B9 /* NBCraftClient.iOS */,
+				8489B0962A86D4B2004CA8EC /* VercraftClient.SDL2 */,
+				844496752E76685C008CF2E0 /* VercraftClient.SDL1 */,
+				8492591C2AD8FCFC0081F5B9 /* VercraftClient.iOS */,
 				84B8AE132AF188D8008DE93D /* Client */,
 				84E4BFAD2AE9854B0023E16A /* Common */,
 				84CCBC442E61849800E251AF /* NBT */,
@@ -8029,8 +8029,8 @@
 		84619B262AF1F32500B0DE81 /* Debug [iOS] (Default) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8176,8 +8176,8 @@
 		84619B312AF1F33A00B0DE81 /* Release [iOS] (Default) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8407,8 +8407,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA52B1EB57E00097DB0 /* Settings_iOS_Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8422,8 +8422,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA42B1EB50E00097DB0 /* Settings_iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8438,8 +8438,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA42B1EB50E00097DB0 /* Settings_iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8453,8 +8453,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA42B1EB50E00097DB0 /* Settings_iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8468,8 +8468,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA42B1EB50E00097DB0 /* Settings_iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8763,8 +8763,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA52B1EB57E00097DB0 /* Settings_iOS_Debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -8934,8 +8934,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84336BA42B1EB50E00097DB0 /* Settings_iOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/nbcraft.entitlements;
-				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/NBCraft-Info.plist";
+				CODE_SIGN_ENTITLEMENTS = $MC_ROOT/platforms/ios/Vercraft.entitlements;
+				INFOPLIST_FILE = "$(SRCROOT)/../../platforms/ios/Vercraft-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\\\"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/lib/arc\\\"",
@@ -9149,7 +9149,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release [SDL2] (Default)";
 		};
-		844496832E76685C008CF2E0 /* Build configuration list for PBXNativeTarget "NBCraftClient.SDL1" */ = {
+		844496832E76685C008CF2E0 /* Build configuration list for PBXNativeTarget "VercraftClient.SDL1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8444967C2E76685C008CF2E0 /* Debug [SDL2] (Default) */,
@@ -9181,7 +9181,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release [SDL2] (Default)";
 		};
-		8489B0922A86D4B2004CA8EC /* Build configuration list for PBXProject "NBCraft" */ = {
+		8489B0922A86D4B2004CA8EC /* Build configuration list for PBXProject "Vercraft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8489B09C2A86D4B2004CA8EC /* Debug [SDL2] (Default) */,
@@ -9197,7 +9197,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release [SDL2] (Default)";
 		};
-		8489B09E2A86D4B2004CA8EC /* Build configuration list for PBXNativeTarget "NBCraftClient.SDL2" */ = {
+		8489B09E2A86D4B2004CA8EC /* Build configuration list for PBXNativeTarget "VercraftClient.SDL2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8489B09F2A86D4B2004CA8EC /* Debug [SDL2] (Default) */,
@@ -9213,7 +9213,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release [SDL2] (Default)";
 		};
-		8492593D2AD8FCFD0081F5B9 /* Build configuration list for PBXNativeTarget "NBCraftClient.iOS" */ = {
+		8492593D2AD8FCFD0081F5B9 /* Build configuration list for PBXNativeTarget "VercraftClient.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8492593E2AD8FCFD0081F5B9 /* Debug [SDL2] (Default) */,

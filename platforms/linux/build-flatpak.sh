@@ -7,9 +7,9 @@ cd "$scriptroot"
 
 arch="${ARCH:-x86_64}"
 # Must be kept in sync with the cmake executable name
-bin='nbcraft'
+bin='Vercraft'
 
-bundleid='org.nbcraft.nbcraft'
+bundleid='org.Vercraft.Vercraft'
 
 platformdir=$PWD
 
@@ -125,4 +125,4 @@ flatpak build-finish output \
     --command=rungame.sh
 
 flatpak build-export repo output
-flatpak build-bundle --arch "$arch" repo "NBCraft-$arch.flatpak" "$bundleid"
+flatpak build-bundle --arch "$arch" repo "Vercraft-$arch.flatpak" "$bundleid"

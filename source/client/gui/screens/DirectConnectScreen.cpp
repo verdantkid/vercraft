@@ -80,7 +80,7 @@ void DirectConnectScreen::render(float f)
 	Screen::render(f);
 
 	drawCenteredString(*m_pFont, "Direct Connect", m_width / 2, 30, 0xFFFFFF);
-	drawCenteredString(*m_pFont, "NBCraft (vercraft) Multiplayer is pretty buggy, here be dragons!", m_width / 2, 60, 0x777777);
+	drawCenteredString(*m_pFont, "Vercraft (vercraft) Multiplayer is pretty buggy, here be dragons!", m_width / 2, 60, 0x777777);
 	drawString(*m_pFont, "Server Address", m_textAddress.m_xPos, m_textAddress.m_yPos - 15, 0x999999);
 }
 

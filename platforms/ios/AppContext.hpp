@@ -1,9 +1,9 @@
 //
 //  AppContext.hpp
-//  NBCraft
+//  Vercraft
 //
 //  Created by Brent on 10/13/23.
-//  Copyright (c) 2023 NBCraft. All rights reserved.
+//  Copyright (c) 2023 Vercraft. All rights reserved.
 //
 
 #pragma once

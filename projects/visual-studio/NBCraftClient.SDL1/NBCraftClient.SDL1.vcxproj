@@ -22,9 +22,9 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{06cf6b2f-d39b-4eeb-a582-a4a264c7b682}</ProjectGuid>
-    <RootNamespace>NBCraftClientSDL1</RootNamespace>
+    <RootNamespace>VercraftClientSDL1</RootNamespace>
     <ConfigurationType>Application</ConfigurationType>
-    <ProjectName>NBCraftClient.SDL1</ProjectName>
+    <ProjectName>VercraftClient.SDL1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -32,7 +32,7 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-  <ImportGroup Label="NBCraft">
+  <ImportGroup Label="Vercraft">
     <Import Project="../Directory.Build.props" Condition="'$(MC_GLOBAL_PROPS)'==''" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />

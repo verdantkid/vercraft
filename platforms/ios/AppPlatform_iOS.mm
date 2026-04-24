@@ -1,6 +1,6 @@
 //
 //  AppPlatform_iOS.m
-//  NBCraft
+//  Vercraft
 //
 //  Created by Brent on 10/30/23.
 //  Copyright (c) 2023 __MyCompanyName__. All rights reserved.

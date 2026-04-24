@@ -79,7 +79,7 @@ jobs:
             with:
               name: Linux (${{ matrix.name }})
               path: |
-                build/nbcraft
+                build/Vercraft
                 build/assets
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache
@@ -139,7 +139,7 @@ jobs:
           - uses: actions/upload-artifact@v6
             with:
               name: Flatpak (${{ matrix.name }})
-              path: platforms/linux/build-flatpak/NBCraft-${{ matrix.arch }}.flatpak
+              path: platforms/linux/build-flatpak/Vercraft-${{ matrix.arch }}.flatpak
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache
 
@@ -185,7 +185,7 @@ jobs:
               # workaround stupid upload-artifacts bs semantics
               # if you point it at a folder the zip will have the contents of that folder instead of the folder itself
               mkdir upload
-              mv platforms/macos/build/NBCraft.app upload
+              mv platforms/macos/build/Vercraft.app upload
             env:
               NOSTRIP: 1
           - uses: actions/upload-artifact@v6
@@ -245,7 +245,7 @@ jobs:
           - uses: actions/upload-artifact@v6
             with:
               name: iOS
-              path: platforms/ios/build/NBCraft.ipa
+              path: platforms/ios/build/Vercraft.ipa
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache workspacecache.tar
 
@@ -307,16 +307,16 @@ jobs:
             env:
               ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
             if: ${{ env.ANDROID_KEYSTORE }}
-            run: mv ${{ steps.sign_apk.outputs.signedReleaseFile }} NBCraft.apk
+            run: mv ${{ steps.sign_apk.outputs.signedReleaseFile }} Vercraft.apk
           - name: Rename APK
             env:
               ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
             if: ${{ !env.ANDROID_KEYSTORE }}
-            run: mv ${{ matrix.directory }}/app/build/outputs/apk/release/app-release-unsigned.apk NBCraft.apk
+            run: mv ${{ matrix.directory }}/app/build/outputs/apk/release/app-release-unsigned.apk Vercraft.apk
           - uses: actions/upload-artifact@v6
             with:
               name: Android (${{ matrix.name }})
-              path: NBCraft.apk
+              path: Vercraft.apk
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache
 
@@ -380,7 +380,7 @@ jobs:
           - uses: actions/upload-artifact@v6
             with:
               name: Windows (${{ matrix.name }})
-              path: platforms/windows/build/NBCraft
+              path: platforms/windows/build/Vercraft
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache workspacecache.tar
 
@@ -416,13 +416,13 @@ jobs:
                     -DCMAKE_C_COMPILER_LAUNCHER=ccache \
                     -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
                 /opt/devkitpro/portlibs/switch/bin/aarch64-none-elf-cmake --build .
-                mv platforms/sdl/sdl2/nbcraft.nro .
+                mv platforms/sdl/sdl2/Vercraft.nro .
           - uses: actions/upload-artifact@v6
             with:
               name: Nintendo Switch
               path: |
-                build/nbcraft.nro
-                build/nbcraft.elf
+                build/Vercraft.nro
+                build/Vercraft.elf
                 build/assets
           - name: Pack cache
             run: cd ~ && tar cJf ccache.tar.xz .cache/ccache

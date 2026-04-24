@@ -1,6 +1,6 @@
 //
 //  EndianDefinitions.h
-//  NBCraft
+//  Vercraft
 //
 //  Created by Brent on 9/14/25.
 //

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.16.0)
-project(nbcraft-sdl2)
+project(Vercraft-sdl2)
 
 # SDL Build
-target_compile_definitions(nbcraft-core
+target_compile_definitions(Vercraft-core
     PUBLIC USE_SDL
     PUBLIC HANDLE_CHARS_SEPARATELY
 )
@@ -19,17 +19,17 @@ else()
     list(APPEND SOURCES desktop/AppPlatform_sdl2_desktop.cpp)
 endif()
 if(ANDROID)
-    add_library(nbcraft SHARED ${SOURCES})
-    set_target_properties(nbcraft PROPERTIES OUTPUT_NAME main)
+    add_library(Vercraft SHARED ${SOURCES})
+    set_target_properties(Vercraft PROPERTIES OUTPUT_NAME main)
 else()
-    add_executable(nbcraft ${SOURCES})
+    add_executable(Vercraft ${SOURCES})
 endif()
 
 # Core
-target_link_libraries(nbcraft nbcraft-core)
+target_link_libraries(Vercraft Vercraft-core)
 
 # stb_image
-target_link_libraries(nbcraft stb_image)
+target_link_libraries(Vercraft stb_image)
 
 # SDL
 add_library(SDL INTERFACE)
@@ -55,27 +55,27 @@ else()
     find_package(SDL2 REQUIRED)
     target_link_libraries(SDL INTERFACE SDL2::SDL2)
 endif()
-target_link_libraries(nbcraft-core PUBLIC SDL)
+target_link_libraries(Vercraft-core PUBLIC SDL)
 if(TARGET SDL2::SDL2main)
-    target_link_libraries(nbcraft SDL2::SDL2main)
+    target_link_libraries(Vercraft SDL2::SDL2main)
 endif()
 
 if(NBC_GFX_API STREQUAL "OGL")
     # OpenGL
     if(ANDROID)
         find_library(GLES_LIB GLESv1_CM REQUIRED)
-        target_link_libraries(nbcraft-core PUBLIC "${GLES_LIB}")
-        target_compile_definitions(nbcraft-core PUBLIC USE_GLES)
+        target_link_libraries(Vercraft-core PUBLIC "${GLES_LIB}")
+        target_compile_definitions(Vercraft-core PUBLIC USE_GLES)
     elseif(NINTENDO_SWITCH)
         find_package(OpenGL REQUIRED)
-        target_link_libraries(nbcraft-core PUBLIC OpenGL::EGL GLESv1_CM)
-        target_compile_definitions(nbcraft-core PUBLIC USE_GLES)
+        target_link_libraries(Vercraft-core PUBLIC OpenGL::EGL GLESv1_CM)
+        target_compile_definitions(Vercraft-core PUBLIC USE_GLES)
     else()
         find_package(OpenGL REQUIRED)
-        target_link_libraries(nbcraft-core PUBLIC OpenGL::GL)
+        target_link_libraries(Vercraft-core PUBLIC OpenGL::GL)
         if(EMSCRIPTEN)
             # Use WebGL 2
-            target_link_options(nbcraft-core PUBLIC
+            target_link_options(Vercraft-core PUBLIC
                 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2
                 -sLEGACY_GL_EMULATION -sGL_FFP_ONLY
             )
@@ -85,18 +85,18 @@ endif()
 
 if(EMSCRIPTEN) # WASM
     # Export Resize Function
-    target_link_options(nbcraft PRIVATE -sEXPORTED_FUNCTIONS=_main,_resize_from_js -sEXPORTED_RUNTIME_METHODS=ccall)
+    target_link_options(Vercraft PRIVATE -sEXPORTED_FUNCTIONS=_main,_resize_from_js -sEXPORTED_RUNTIME_METHODS=ccall)
 endif()
 
 if(NINTENDO_SWITCH)
-    nx_generate_nacp(nbcraft.nacp
-        NAME "nbcraft"
-        AUTHOR "nbcraft Team"
+    nx_generate_nacp(Vercraft.nacp
+        NAME "Vercraft"
+        AUTHOR "Vercraft Team"
         VERSION "v0.3.3 alpha"
     )
 
-    nx_create_nro(nbcraft
-        NACP nbcraft.nacp
+    nx_create_nro(Vercraft
+        NACP Vercraft.nacp
         ICON "../../../game/assets/app/icons/icon.jpg"
     )
 endif()

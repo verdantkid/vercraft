@@ -39,7 +39,7 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-  <ImportGroup Label="NBCraft">
+  <ImportGroup Label="Vercraft">
     <Import Project="../Directory.Build.props" Condition="'$(MC_GLOBAL_PROPS)'==''" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />

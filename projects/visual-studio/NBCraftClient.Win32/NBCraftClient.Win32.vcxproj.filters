@@ -37,7 +37,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="$(MC_ROOT)\platforms\windows\NBCraftClient.Win32.rc">
+    <ResourceCompile Include="$(MC_ROOT)\platforms\windows\VercraftClient.Win32.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.16.0)
-project(nbcraft-core)
+project(Vercraft-core)
 
 # Build
-add_library(nbcraft-core STATIC
+add_library(Vercraft-core STATIC
     common/threading/CThread.cpp
     common/threading/AsyncTask.cpp
     common/DataIO.cpp
@@ -535,18 +535,18 @@ add_library(nbcraft-core STATIC
     renderer/hal/interface/ShaderProgram.cpp
     renderer/hal/interface/Texture.cpp
 )
-target_include_directories(nbcraft-core PUBLIC . ..)
+target_include_directories(Vercraft-core PUBLIC . ..)
 
 # OGL Shader variant build hack
 if(NBC_GFX_API STREQUAL "OGL_SHADERS")
-    target_compile_definitions(nbcraft-core PUBLIC FEATURE_GFX_SHADERS)
+    target_compile_definitions(Vercraft-core PUBLIC FEATURE_GFX_SHADERS)
     unset(NBC_GFX_API CACHE)
     set(NBC_GFX_API "OGL" CACHE STRING "HAL GFX API")
 endif()
 
 if(NBC_GFX_API STREQUAL "OGL")
-    target_compile_definitions(nbcraft-core PUBLIC MCE_GFX_API_OGL=1)
-    target_sources(nbcraft-core PRIVATE
+    target_compile_definitions(Vercraft-core PUBLIC MCE_GFX_API_OGL=1)
+    target_sources(Vercraft-core PRIVATE
         renderer/hal/ogl/API_OGL.cpp
         renderer/hal/ogl/AlphaStateOGL.cpp
         renderer/hal/ogl/BlendStateOGL.cpp
@@ -574,8 +574,8 @@ if(NBC_GFX_API STREQUAL "OGL")
         renderer/platform/ogl/ShaderPrecision.cpp
     )
 elseif(NBC_GFX_API STREQUAL "D3D11")
-    target_compile_definitions(nbcraft-core PUBLIC MCE_GFX_API_D3D11=1 FEATURE_GFX_SHADERS)
-    target_sources(nbcraft-core PRIVATE
+    target_compile_definitions(Vercraft-core PUBLIC MCE_GFX_API_D3D11=1 FEATURE_GFX_SHADERS)
+    target_sources(Vercraft-core PRIVATE
         renderer/hal/d3d11/API_D3D11.cpp
         renderer/hal/d3d11/BlendStateD3D11.cpp
         renderer/hal/d3d11/BufferD3D11.cpp
@@ -599,8 +599,8 @@ elseif(NBC_GFX_API STREQUAL "D3D11")
         renderer/hal/dxgi/helpers/TextureHelperDXGI.cpp
     )
 elseif((NOT DEFINED NBC_GFX_API) OR (NBC_GFX_API STREQUAL "Null"))
-    target_compile_definitions(nbcraft-core PUBLIC MCE_GFX_API_NULL=1)
-    target_sources(nbcraft-core PRIVATE
+    target_compile_definitions(Vercraft-core PUBLIC MCE_GFX_API_NULL=1)
+    target_sources(Vercraft-core PRIVATE
         renderer/hal/null/BlendStateNull.cpp
         renderer/hal/null/BufferNull.cpp
         renderer/hal/null/ConstantBufferContainerNull.cpp
@@ -621,7 +621,7 @@ endif()
 
 # RakNet
 add_subdirectory(../thirdparty/raknet raknet)
-target_link_libraries(nbcraft-core PUBLIC raknet)
+target_link_libraries(Vercraft-core PUBLIC raknet)
 
 # zlib
 add_library(zlib-interface INTERFACE)
@@ -639,7 +639,7 @@ else()
     add_subdirectory(../thirdparty/zlib zlib)
     target_link_libraries(zlib-interface INTERFACE zlib)
 endif()
-target_link_libraries(nbcraft-core PUBLIC zlib-interface)
+target_link_libraries(Vercraft-core PUBLIC zlib-interface)
 
 # OGG Support
-target_link_libraries(nbcraft-core PUBLIC stb_vorbis)
+target_link_libraries(Vercraft-core PUBLIC stb_vorbis)

@@ -43,8 +43,8 @@ cmake --build .
 
 ::bundle
 echo * Copying bundle data over.
-copy nbcraft.* ..\dist
-copy ..\..\platforms\sdl\sdl2\emscripten\wasm_shell.html ..\dist\nbcraft.html
+copy Vercraft.* ..\dist
+copy ..\..\platforms\sdl\sdl2\emscripten\wasm_shell.html ..\dist\Vercraft.html
 copy ..\..\thirdparty\coi-serviceworker\coi-serviceworker.min.js ..\dist
 
 ::for me only

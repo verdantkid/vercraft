@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8489B0962A86D4B2004CA8EC"
-               BuildableName = "NBCraftClient.SDL2"
-               BlueprintName = "NBCraftClient.SDL2"
-               ReferencedContainer = "container:NBCraft.xcodeproj">
+               BuildableName = "VercraftClient.SDL2"
+               BlueprintName = "VercraftClient.SDL2"
+               ReferencedContainer = "container:Vercraft.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8489B0962A86D4B2004CA8EC"
-            BuildableName = "NBCraftClient.SDL2"
-            BlueprintName = "NBCraftClient.SDL2"
-            ReferencedContainer = "container:NBCraft.xcodeproj">
+            BuildableName = "VercraftClient.SDL2"
+            BlueprintName = "VercraftClient.SDL2"
+            ReferencedContainer = "container:Vercraft.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8489B0962A86D4B2004CA8EC"
-            BuildableName = "NBCraftClient.SDL2"
-            BlueprintName = "NBCraftClient.SDL2"
-            ReferencedContainer = "container:NBCraft.xcodeproj">
+            BuildableName = "VercraftClient.SDL2"
+            BlueprintName = "VercraftClient.SDL2"
+            ReferencedContainer = "container:Vercraft.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8489B0962A86D4B2004CA8EC"
-            BuildableName = "NBCraftClient.SDL2"
-            BlueprintName = "NBCraftClient.SDL2"
-            ReferencedContainer = "container:NBCraft.xcodeproj">
+            BuildableName = "VercraftClient.SDL2"
+            BlueprintName = "VercraftClient.SDL2"
+            ReferencedContainer = "container:Vercraft.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

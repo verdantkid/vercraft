@@ -1,6 +1,6 @@
 //
 //  PlatformDefinitions.h
-//  NBCraft
+//  Vercraft
 //
 //  Created by Brent on 11/27/23.
 //

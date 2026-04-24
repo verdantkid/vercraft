@@ -11,7 +11,7 @@
 cd "$scriptroot" || exit 1
 
 [ "$(arch)" = "ppc" ] &&
-    exec ./libexec/nbcraft-powerpc "$@"
+    exec ./libexec/Vercraft-powerpc "$@"
 
 arch="$(./libexec/arch)"
 
@@ -19,17 +19,17 @@ if [ "$arch" = "x86_64" ]; then
     case $(uname -r) in
         (8.*|9.*|10.*)
             # Tiger, Leopard, or Snow Leopard
-            exec ./libexec/nbcraft-i386 "$@"
+            exec ./libexec/Vercraft-i386 "$@"
         ;;
         (*)
             if [ "$(sysctl -n sysctl.proc_translated 2>/dev/null)" = "1" ]; then
                 # i hate rosetta
-                exec ./libexec/nbcraft-arm64 "$@"
+                exec ./libexec/Vercraft-arm64 "$@"
             else
-                exec ./libexec/nbcraft-x86_64 "$@"
+                exec ./libexec/Vercraft-x86_64 "$@"
             fi
         ;;
     esac
 fi
 
-exec "./libexec/nbcraft-$arch" "$@"
+exec "./libexec/Vercraft-$arch" "$@"

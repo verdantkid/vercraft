@@ -16,9 +16,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "World", "World\World.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{A6E03DCA-99F6-45B8-800D-73060AE407FC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBCraftClient.Win32", "NBCraftClient.Win32\NBCraftClient.Win32.vcxproj", "{FF5A623D-03C2-4967-8E78-CB021114A501}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VercraftClient.Win32", "VercraftClient.Win32\VercraftClient.Win32.vcxproj", "{FF5A623D-03C2-4967-8E78-CB021114A501}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBCraftClient.SDL2", "NBCraftClient.SDL2\NBCraftClient.SDL2.vcxproj", "{5C1CE194-2DC6-441D-96F5-9780D0A10AAB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VercraftClient.SDL2", "VercraftClient.SDL2\VercraftClient.SDL2.vcxproj", "{5C1CE194-2DC6-441D-96F5-9780D0A10AAB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL", "SDL\SDL.vcxproj", "{A88F87B0-D37B-4385-A870-F349D8001E08}"
 EndProject
@@ -30,7 +30,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STB", "STB\STB.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBT", "NBT\NBT.vcxproj", "{B01E1536-505B-4357-B5B6-083EFBF786B0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBCraftClient.SDL1", "NBCraftClient.SDL1\NBCraftClient.SDL1.vcxproj", "{06CF6B2F-D39B-4EEB-A582-A4A264C7B682}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VercraftClient.SDL1", "VercraftClient.SDL1\VercraftClient.SDL1.vcxproj", "{06CF6B2F-D39B-4EEB-A582-A4A264C7B682}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{38723BE5-0310-4941-B11F-EA7FF21394D9}"
 EndProject
@@ -40,7 +40,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Renderer.OGL", "Renderer.OG
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Renderer.Null", "Renderer.Null\Renderer.Null.vcxproj", "{70C3540E-95CD-4A57-BDF2-E1DA7767A918}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBCraftClient.XDK360", "NBCraftClient.XDK360\NBCraftClient.XDK360.vcxproj", "{CCCDDD5C-4352-4D7C-8AA8-38FD1D76B82A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VercraftClient.XDK360", "VercraftClient.XDK360\VercraftClient.XDK360.vcxproj", "{CCCDDD5C-4352-4D7C-8AA8-38FD1D76B82A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Renderer.D3D9", "Renderer.D3D9\Renderer.D3D9.vcxproj", "{BEACD150-FC47-49AE-AC5A-19A7E2409A38}"
 EndProject
