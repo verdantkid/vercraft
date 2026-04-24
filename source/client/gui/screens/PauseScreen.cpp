@@ -14,8 +14,8 @@ PauseScreen::PauseScreen() :
 	//m_oPos(0),
 	field_40(0),
 	m_btnBack("Back to game"),
-	m_btnQuit("Save and Quit to title"),
-	m_btnQuitAndCopy("Quit and copy map"),
+	m_btnQuit("Quit to title"),
+	m_btnQuitAndCopy("Quit"),
 	m_btnVisible("")
 #ifdef ENH_ADD_OPTIONS_PAUSE
 	, m_btnOptions("Options")
@@ -71,9 +71,9 @@ void PauseScreen::updateServerVisibilityText()
 	ServerSideNetworkHandler* pSSNH = (ServerSideNetworkHandler*)m_pMinecraft->m_pNetEventCallback;
 
 	if (pSSNH->m_bAllowIncoming)
-		m_btnVisible.setMessage("Close LAN world");
+		m_btnVisible.setMessage("Open to LAN :D");
 	else
-		m_btnVisible.setMessage("Open to LAN");
+		m_btnVisible.setMessage("Not Open to LAN :(");
 }
 
 void PauseScreen::tick()

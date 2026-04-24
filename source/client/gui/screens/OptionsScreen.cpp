@@ -237,10 +237,10 @@ void OptionsScreen::updateTexts()
 	m_AOButton.m_text          = "Smooth lighting: " + BoolOptionStr(o.m_ambientOcclusion);
 	m_invertYButton.m_text     = "Invert Y-axis: "   + BoolOptionStr(o.m_invertMouse);
 	m_viewBobButton.m_text     = "View bobbing: "    + BoolOptionStr(o.m_viewBobbing);
-	m_anaglyphsButton.m_text   = "3d Anaglyphs: "    + BoolOptionStr(o.m_anaglyphs);
+	//m_anaglyphsButton.m_text   = "3d Anaglyphs: "    + BoolOptionStr(o.m_anaglyphs); // i don't see a use for this code
 	m_fancyGfxButton.m_text    = "Fancy graphics: "  + BoolOptionStr(o.m_fancyGraphics);
 	m_flightHaxButton.m_text   = "Flight hax: "      + BoolOptionStr(o.m_flightHax);
-	m_autoJumpButton.m_text    = "Auto Jump: "       + BoolOptionStr(o.m_autoJump);
+	m_autoJumpButton.m_text    = "Auto Jump: "       + BoolOptionStr(o.m_autoJump); // i hate this bro
 	m_viewDistButton.m_text    = "View distance: "   + ViewDistanceStr(o.m_viewDistance);
 	m_blockLinesButton.m_text  = "Block outlines: "  + BoolOptionStr(o.m_blockOutlines);
 	m_fancyGrassButton.m_text  = "Fancy grass: "     + BoolOptionStr(o.m_fancyGrass);

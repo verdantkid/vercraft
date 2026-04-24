@@ -182,8 +182,8 @@ void StartMenuScreen::render(float f)
 #endif
 
 	//int titleYPos = 4;
-	//int titleYPos = 30; // -- MC Java position.
-	int titleYPos = 15;
+	int titleYPos = 30; // -- MC Java position.
+	//int titleYPos = 15;
 	bool crampedMode = false;
 
 	if (m_width * 3 / 4 < 256)

@@ -2,7 +2,7 @@
 
 DeathScreen::DeathScreen() :
 	m_btnRespawn("Respawn"),
-	m_btnTitle  ("Exit")
+	m_btnTitle  ("Quit")
 {
 	m_tickCounter = 0;
 }
