@@ -17,7 +17,7 @@
 #include "JoinGameScreen.hpp"
 #include "client/resources/SplashManager.hpp"
 
-StartMenuScreen::StartMenuScreen() :
+StartMenuScreen::StartMenuScreen() : // adding a code cum :D
 	m_startButton  (0, 0, 160, 24, "Singleplayer"),
 	m_joinButton   (0, 0, 160, 24, "Multiplayer"),
 	m_optionsButton(0, 0,  78, 22, "Options"),
